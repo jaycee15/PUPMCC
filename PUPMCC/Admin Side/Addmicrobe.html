@@ -1,0 +1,613 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Admin - Collection</title>
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--Custom Style-->
+	<link href="main.css" rel="stylesheet">
+	<!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.1/css/fileinput.css">
+    
+
+
+   
+
+
+
+
+
+</head>
+<body>
+
+	<nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 nav2">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+  </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-1 mb-1 text-muted">
+              <span>Home</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="sidebar"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="Dashboard.html">
+                  <span data-feather="home"></span>
+                  Dashboard
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Maintenance</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="shield"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="Family.html">
+                  <span data-feather="book"></span>
+                  Family 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Genus.html">
+                  <span data-feather="book"></span>
+                  Genus
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Specie.html">
+                  <span data-feather="book"></span>
+                  Specie
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Characteristics.html">
+                  <span data-feather="book-open"></span>
+                  Characteristics
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CultureMedia.html">
+                  <span data-feather="clipboard"></span>
+                  Culture Media 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Preservation.html">
+                  <span data-feather="battery"></span>
+                  Preservation
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Storage.html">
+                  <span data-feather="archive"></span>
+                  Storage 
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Transaction</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="repeat"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="package"></span>
+                  Microbe Collection <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="MicrobeRequest.html">
+                  <span data-feather="clipboard"></span>
+                  Microbe Request
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="MicrobeDeposit.html">
+                  <span data-feather="clipboard"></span>
+                  Microbe Deposit Request
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="InputApprovals.html">
+                  <span data-feather="check-square"></span>
+                  Input Approvals
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Utilities</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="settings"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="Members.html">
+                  <span data-feather="users"></span>
+                  Admins
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Members2.html">
+                  <span data-feather="users"></span>
+                  Lab Personnel
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Query/Reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="database"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="Historylog.html">
+                  <span data-feather="book"></span>
+                  History Logs
+                </a>
+              </li>
+            </ul>
+
+            <ul class="nav flex-column mt-3 mb-4">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">
+                  <span data-feather="log-out"></span>
+                  Logout
+                </a>
+              </li>
+            </ul>
+
+
+          </div>
+		</nav>
+		
+		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-2 border-bottom">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="text-danger" href="MicrobeCollection.html">Collection</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Add Microbe</li>
+                    </ol>
+                </nav>
+            </div>
+
+            
+
+            <div class="container">
+                <div class="py-5 text-center">
+                    <h2>Add Microbe Form</h2>
+                    <small class="text-muted">Fill up necessary information below.</small>
+                </div>
+                <div class="row">  
+
+                    <div class="col-md-3 mb-3">
+                        <label for="addMicrobeDomain">Domain</label>
+                        <select class="custom-select d-block w-100" id="addMicrobeDomain" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="GenusName">Genus Name</label>
+                        <input type="text" class="form-control" id="GenusName" placeholder="..." value="" required>
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 mb-3">
+                        <label for="BSL">Bio Safety Level</label>
+                        <select class="custom-select d-block w-100" id="BSL" required>
+                            <option value="">...</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-md-7 mb-3">
+                        <label for="addFamily">Family</label>
+                        <select class="custom-select d-block w-100" id="addFamily" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                        <label for="addspecie">Specie</label>
+                        <select class="custom-select d-block w-100" id="addspecie" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <hr class="mb-2 mt-2">
+                
+
+                <div class="row">
+
+
+                    <div class="col-md-4 mb-3">
+                        <label for="addCultureMedia">Culture Media 1</label>
+                        <select class="custom-select d-block w-100" id="CultureMedia" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-3">
+                        <label for="addCultureMedia2">Culture Media 2</label>
+                        <select class="custom-select d-block w-100" id="CultureMedia2" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label for="addCultureMedia3">Culture Media 3</label>
+                        <select class="custom-select d-block w-100" id="CultureMedia3" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+                <hr class="mb-2 mt-2">
+
+                <div class="row">
+                    
+
+                    <div class="col-md-12 mb-3">
+                        <label for="AccNum16S">Accession Number of 16S rRNA Gene Sequence</label>
+                        <input type="text" class="form-control" id="AccNum16S" placeholder="..." value="" required readonly="true">
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-md-6 mb-3">
+                        <label for="OSR">Original Strain Reference</label>
+                        <input type="text" class="form-control" id="OSR" placeholder="..." value="" required>
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="IsolatedFrom">Isolated From</label>
+                        <input type="text" class="form-control" id="IsolatedFrom" placeholder="..." value="" required>
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <label for="GrowthCondition">Growth Condition</label>
+                        <input type="text" class="form-control" id="GrowthCondition" placeholder="..." value="" required>
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Depositor">Depositor</label>
+                        <input type="text" class="form-control" id="Depositor" placeholder="..." value="" required>
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="DepContact">Contact</label>
+                        <input type="text" class="form-control" id="DepContact" placeholder="..." value="" required>
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="DepEmail">Email</label>
+                        <input type="text" class="form-control" id="DepEmail" placeholder="..." value="" required>
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+
+
+                </div>
+                <hr class="mb-4 mt-2">
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <label for="PreservationFormat">Preservation Format</label>
+                        <select class="custom-select d-block w-100" id="PreservationFormat" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="storage">Storage</label>
+                        <select class="custom-select d-block w-100" id="Storage" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                        <label for="DatePreserved">Date Preserved</label>
+                        <input type="date"  class="form-control" name="DatePreserved" required>
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                        <label for="NumberofDays">Number of Days</label>
+                        <input type="text" class="form-control" id="NumberofDays" placeholder="..." value="" required readonly="true">
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <hr class="mb-2 mt-2">
+
+                <div class="row">
+                    <div class="col-md-12 mb-1">
+                        <h6 class="m-t-2 mt-2 text-center">Upload Images</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                            <label class="control-label">
+                                    Attachment(s) (Attach multiple files.)
+                                </label>
+                                <input id="input-2" name="input2[]" type="file" class="file" multiple data-show-upload="true" data-show-caption="true">
+                    </div>
+                </div>
+
+                <hr class="mb-4 mt-2">
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="fillCharacteristics">Characteristics</label>
+                        <input type="text" class="form-control" id="fillCharacteristics" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid Information is required.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="FillResults">Results</label>
+                        <select class="custom-select d-block w-100" id="FillResults" required>
+                            <option value="">...</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>sample</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid choice.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt-4 pt-1  justify-content-end">
+                        <div class="btn-group">
+                            <div class="space">
+                                <button class="btn btn-outline-secondary btn-block">
+                                <span data-feather="plus-circle"></span>Add</button>
+                            </div>
+                         
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                            <h5 class="card-title">Characteristic List</h5>
+                                <div class="tables">
+                                    <div class="table-responsive">
+                                        <div class="container">
+                                            <table class="table table-hover ">
+                                                <thead>
+                                                    <tr>
+                                                    <th scope="col">Characteristic</th>
+                                                    <th scope="col">Result</th>
+                                                    <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">SAMPLE</td>
+                                                        <td>SAMPLE</td>
+                                                        <td>Edit/Delete</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mb-2 mt-2">
+
+
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <label for="remarks">Remarks</label>
+                        <textarea class="form-control" id="remarks" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <hr class="mb-2 mt-2">
+
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-end">
+                                <button class="btn btn-lg btn-outline-secondary space">Clear</button>
+                                <button class="btn btn-lg btn-outline-danger">Confirm</button>
+                            </div>
+
+                    </div>
+                </div>
+
+
+
+
+		  
+        </main>
+      </div>
+    </div>
+
+	  
+
+
+
+
+	<!--Javascripts-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.1/js/fileinput.js"></script>
+
+
+	<!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+
+    
+
+
+	
+
+</body>
+</html>
